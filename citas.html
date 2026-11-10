@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agendar cita | Centro Veterinario Inara</title>
+<meta name="description" content="Agenda la consulta de tu mascota en 1 minuto: elige especie, motivo, día y hora. Confirmación por correo o teléfono.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<a href="#contenido" style="position:absolute;left:-9999px">Saltar al contenido</a>
+<div class="topbar"><div class="container"><span>Morelia, Mich. | Calle María Rodríguez del Toro de Lazarín 59-A, Col. Bocanegra</span><span>Lunes a Sábado: 10:00 – 19:00 hrs · Tel: <a href="tel:+524432749465">443 274 9465</a></span></div></div>
+<header class="site-header"><div class="container header-in">
+<a class="logo" href="index.html"><svg width="44" height="44" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4C14 4 8 13 8 24v16h32V24C40 13 34 4 24 4z" fill="#173B2E"/><path d="M24 22c-2.4 0-5 2.2-5 4.2 0 1.4 1 2.2 2.4 2.2.9 0 1.7-.5 2.6-.5s1.7.5 2.6.5c1.4 0 2.4-.8 2.4-2.2 0-2-2.6-4.2-5-4.2zM18.5 17c-1 .3-1.5 1.6-1.2 2.7.2 1.1 1.3 1.8 2.2 1.5.9-.3 1.4-1.4 1.2-2.5-.3-1.1-1.2-1.9-2.2-1.7zm11 0c-.9-.2-1.9.6-2.2 1.7-.2 1.1.3 2.2 1.2 2.5.9.3 1.9-.4 2.2-1.5.3-1.1-.2-2.4-1.2-2.7zM21.8 12.5c-1 .4-1.5 1.7-1 2.9.4 1.1 1.5 1.7 2.4 1.4.9-.4 1.4-1.6 1-2.7-.4-1.1-1.4-1.9-2.4-1.6zm4.4 0c-1-.3-2 .5-2.4 1.6-.4 1.1.1 2.3 1 2.7.9.3 2-.3 2.4-1.4.5-1.2 0-2.5-1-2.9z" fill="#E4572E"/><path d="M24 33c0-3 1.5-5 3.5-6-.3 2.5.5 4.5 2 6" stroke="#7FB069" stroke-width="2" fill="none" stroke-linecap="round"/></svg><span>Centro Veterinario Inara</span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
+<nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="urgencias-24h.html">Urgencias 24h</a><a href="citas.html" aria-current="page">Citas</a><a href="vacunas.html">Vacunas</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a></nav>
+<div class="header-cta"><a class="header-phone" href="tel:+524432749465">443 274 9465</a><a class="btn btn-terra pulse" href="citas.html">Agendar cita</a></div>
+</div></header>
+<main id="contenido">
+
+<section class="section" style="background:var(--terra);color:#fff;padding:1.2rem 0"><div class="container"><p style="margin:0"><strong>¿Caso crítico o intoxicación repentina?</strong> Atención médica prioritaria en clínica. <a href="tel:+524432749465" style="color:#fff;font-weight:700">Llamar a Urgencias: 443 274 9465</a></p></div></section>
+<section class="section"><div class="container">
+<p class="eyebrow">Citas online en 1 minuto</p>
+<h1>Agenda la consulta de tu mascota</h1>
+<p class="lead">Sin llamadas complicadas ni formularios eternos. Elige el motivo, la fecha y recibe confirmación por teléfono o correo.</p>
+<div class="booker mt" id="booker">
+<p class="progress" id="booker-progress">PASO 1 DE 4 — Identidad de la mascota</p>
+<div class="progress-bar"><span id="booker-bar" style="width:25%"></span></div>
+
+<div class="step-panel active" data-step="1">
+<h3>¿Quién es tu mascota?</h3><p>Selecciona su especie para asignarte al médico veterinario adecuado.</p>
+<p><label>Especie o compañero</label></p>
+<div class="opt-grid">
+<button type="button" class="opt" data-species-opt="Perro" aria-pressed="false"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11V7a5 5 0 0 1 10 0v4M5 11h14v7a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-7zM9 21v-3M15 21v-3"/><path d="M7 9l-2-2M17 9l2-2"/></svg></span><strong>Canino</strong><small>Perro de cualquier raza</small></button>
+<button type="button" class="opt" data-species-opt="Gato" aria-pressed="false"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4l-2 3h4l-2-3zM16 4l-2 3h4l-2-3zM6 8a6 6 0 0 1 12 0v8a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V8z"/></svg></span><strong>Felino</strong><small>Gato doméstico</small></button>
+<button type="button" class="opt" data-species-opt="Animal exótico" aria-pressed="false"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c4-1 8-4 9-9l3-3-2 5c1 4-2 7-6 7H5zM9 19v3"/></svg></span><strong>Animal exótico</strong><small>Aves, reptiles, pequeños mamíferos</small></button>
+</div>
+<p class="field-error" id="err-species">Selecciona la especie de tu mascota para continuar.</p>
+<div class="field"><label for="bk-petname">Nombre de la mascota <span class="req">*</span></label><input id="bk-petname" name="petname" type="text" placeholder="Ej. Canelo, Mila" autocomplete="off"><p class="field-error" id="err-petname">Escribe el nombre de tu mascota.</p></div>
+<div class="field"><label for="bk-petage">Edad aproximada</label><input id="bk-petage" name="petage" type="text" placeholder="Ej. 2 años, cachorro" autocomplete="off"></div>
+<div class="booker-nav"><span></span><button type="button" class="btn btn-terra" data-goto="2">Continuar al Motivo →</button></div>
+</div>
+
+<div class="step-panel" data-step="2">
+<h3>¿Qué necesita?</h3><p>Selecciona el servicio médico requerido para preparar consultorio o instrumental.</p>
+<div class="opt-grid two">
+<button type="button" class="opt" data-motive-opt="Consulta general" aria-pressed="false"><strong>Consulta general</strong><small>Revisión preventiva, malestar general, dolor o chequeo periódico de rutina.</small></button>
+<button type="button" class="opt" data-motive-opt="Vacunación" aria-pressed="false"><strong>Vacunación</strong><small>Esquema completo según especie, edad y revacunaciones anuales.</small></button>
+<button type="button" class="opt" data-motive-opt="Desparasitación" aria-pressed="false"><strong>Desparasitación</strong><small>Control interno (gastrointestinal) y externo (pulgas, garrapatas y ácaros).</small></button>
+<button type="button" class="opt" data-motive-opt="Cirugía o esterilización" aria-pressed="false"><strong>Cirugía o esterilización</strong><small>Valoración prequirúrgica, esterilizaciones programadas o procedimientos de tejidos blandos.</small></button>
+<button type="button" class="opt" data-motive-opt="Odontología" aria-pressed="false"><strong>Odontología</strong><small>Limpieza dental por ultrasonido, profilaxis y tratamiento de sarro o encías.</small></button>
+<button type="button" class="opt" data-motive-opt="Urgencia médica" aria-pressed="false"><strong>Urgencia médica <span class="badge badge-terra">Urgencia</span></strong><small>Para traumatismos, dificultad respiratoria severa o convulsiones.</small></button>
+</div>
+<p class="field-error" id="err-motive">Selecciona el motivo de la consulta para continuar.</p>
+<div class="booker-nav"><button type="button" class="btn btn-outline" data-goto="1">← Volver al Paso 1</button><button type="button" class="btn btn-terra" data-goto="3">Continuar a Fecha →</button></div>
+</div>
+
+<div class="step-panel" data-step="3">
+<h3>¿Cuándo te gustaría venir?</h3><p>Atendemos consultas programadas de Lunes a Sábado de 10:00 a 19:00.</p>
+<div class="field"><label for="bk-date">Selecciona el día de tu visita <span class="req">*</span></label><input id="bk-date" name="date" type="date"><p class="hint">Domingo: Cerrado. Elige un día de lunes a sábado.</p><p class="field-error" id="err-sunday">El domingo la clínica está cerrada. Elige otro día.</p><p class="field-error" id="err-date">Selecciona el día de tu visita.</p></div>
+<p><label>Franja horaria propuesta <span class="hint">[a confirmar — las franjas son propuesta de diseño, no horario publicado]</span></label></p>
+<div class="opt-grid">
+<button type="button" class="opt" data-slot-opt="Mañana 10:00 – 13:00 hrs" aria-pressed="false"><strong>Mañana</strong><small>10:00 – 13:00 hrs</small></button>
+<button type="button" class="opt" data-slot-opt="Tarde 13:00 – 16:00 hrs" aria-pressed="false"><strong>Tarde</strong><small>13:00 – 16:00 hrs</small></button>
+<button type="button" class="opt" data-slot-opt="Vespertino 16:00 – 19:00 hrs" aria-pressed="false"><strong>Vespertino</strong><small>16:00 – 19:00 hrs</small></button>
+</div>
+<p class="field-error" id="err-slot">Selecciona una franja horaria propuesta.</p>
+<div class="booker-nav"><button type="button" class="btn btn-outline" data-goto="2">← Volver al Motivo</button><button type="button" class="btn btn-terra" data-goto="4">Ir a Contacto y Confirmar →</button></div>
+</div>
+
+<div class="step-panel" data-step="4">
+<h3>Tus datos de contacto</h3><p>Para comunicarte el estado de tu confirmación en Morelia.</p>
+<div class="field"><label for="bk-owner">Nombre del dueño o tutor <span class="req">*</span></label><input id="bk-owner" name="owner" type="text" autocomplete="name"><p class="field-error" id="err-owner">Escribe tu nombre.</p></div>
+<div class="field"><label for="bk-phone">Teléfono móvil <span class="req">*</span></label><input id="bk-phone" name="phone" type="tel" autocomplete="tel"><p class="field-error" id="err-phone">Escribe un teléfono de contacto.</p></div>
+<div class="field"><label for="bk-email">Correo electrónico (opcional)</label><input id="bk-email" name="email" type="email" autocomplete="email"></div>
+<div class="field"><label for="bk-notes">Comentarios o síntomas específicos (opcional)</label><textarea id="bk-notes" name="notes"></textarea></div>
+<div class="booker-nav"><button type="button" class="btn btn-outline" data-goto="3">← Volver al Calendario</button></div>
+</div>
+
+<div class="summary-card" aria-live="polite">
+<h3>Ficha de cita — Resumen preliminar</h3>
+<dl>
+<div class="row"><dt>Mascota y especie</dt><dd id="sum-pet">Aún no seleccionada</dd></div>
+<div class="row"><dt>Motivo médico</dt><dd id="sum-motive">Por definir</dd></div>
+<div class="row"><dt>Fecha solicitada</dt><dd id="sum-date">Sin fecha elegida</dd></div>
+<div class="row"><dt>Franja de atención</dt><dd id="sum-slot">Por definir</dd></div>
+</dl>
+<div class="hero-ctas"><button type="button" class="btn btn-terra" id="confirm-mail">Confirmar por correo</button><a class="btn btn-pine" href="tel:+524432749465">Confirmar por teléfono: 443 274 9465</a></div>
+<p id="booker-sent" style="display:none"><strong>Tu solicitud está lista para enviarse por correo.</strong> Se abrirá tu aplicación de correo con el mensaje prellenado.</p>
+<p class="hint">Tus datos son tratados bajo confidencialidad médica y no se comparten con terceros.</p>
+</div>
+
+<div class="notice"><strong>Aviso importante de servicio — Esto es una solicitud de cita.</strong><p>El personal médico de Centro Veterinario Inara confirmará la disponibilidad exacta vía llamada o correo antes de tu visita. La clínica confirma el horario por teléfono o correo.</p></div>
+</div>
+
+<div class="grid grid-2 mt">
+<div class="card"><h3>Horario habitual</h3><p>Lunes a Sábado: 10:00 – 19:00 hrs<br>Domingo: Cerrado</p></div>
+<div class="card"><h3>Instalaciones preparadas</h3><ul class="check-list"><li>Consultorios limpios — ambiente libre de olores agresivos para revisiones caninas y felinas pacíficas.</li><li>Diagnóstico e instrumental — monitoreo continuo para procesos preventivos, quirúrgicos y de urgencia.</li><li>Área de especies exóticas — manejo seguro para aves, pequeños roedores y reptiles.</li><li>Espacios esterilizados y divididos para reducir el estrés de tu mascota.</li></ul></div>
+</div>
+<p class="mt"><strong>Dirección de la clínica:</strong> Calle María Rodríguez del Toro de Lazarín 59-A, Col. Bocanegra, 58150 Morelia, Michoacán. Morelia, Michoacán — Colonia Bocanegra — Lunes a Sábado: 10:00 – 19:00 hrs.</p>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="container">
+<div class="footer-grid">
+<div><h3>Centro Veterinario Inara</h3><p>Atención médica veterinaria profesional, humana y rigurosa en Morelia, Michoacán. Comprometidos con la salud de tu compañero.</p><p><a href="https://www.facebook.com/inaraveterinaria/" target="_blank" rel="noopener">Página oficial de Facebook de Centro Veterinario Inara</a></p></div>
+<div><h4>Ubicación y contacto</h4><ul><li>Calle María Rodríguez del Toro de Lazarín 59-A, Col. Bocanegra, 58150 Morelia, Michoacán</li><li><a href="tel:+524432749465">+52 443 274 9465</a></li><li><a href="mailto:clinicaveterinaria.inara@gmail.com">clinicaveterinaria.inara@gmail.com</a></li></ul></div>
+<div><h4>Horario de atención</h4><ul><li>Lunes a Sábado: 10:00 – 19:00 hrs</li><li>Domingo: Cerrado</li><li>Urgencias 24h: Confirme disponibilidad de urgencias nocturnas contactando directamente vía telefónica antes de trasladarse.</li></ul></div>
+<div><h4>Enlaces rápidos</h4><ul><li><a href="servicios.html">Servicios clínicos</a></li><li><a href="urgencias-24h.html">Protocolo de urgencias (24h)</a></li><li><a href="citas.html">Agendar cita</a></li><li><a href="vacunas.html">Esquemas de vacunación</a></li><li><a href="nosotros.html">Sobre nosotros</a></li><li><a href="contacto.html">Contacto y ubicación</a></li><li><a href="preguntas.html">Preguntas frecuentes</a></li></ul></div>
+</div>
+<div class="subfooter"><span>© Centro Veterinario Inara. Morelia, Michoacán. Todos los derechos reservados.</span><span><a href="privacidad.html">Aviso de Privacidad</a> · <a href="terminos.html">Términos y Condiciones</a></span></div>
+</div></footer>
+<div class="sticky-bar" role="navigation" aria-label="Acciones rápidas"><a href="tel:+524432749465">Llamar</a><a href="citas.html">Agendar</a></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
